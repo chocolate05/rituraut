@@ -823,8 +823,7 @@ void insert_char(filestruct **node, char c){
 	}
 
 	else{
-					/*insert = c;
-					strcpy(node->data, temp);*/					/* TODO PROBLEM TO FIX: If the nodelinesize exceeds the maxlength of line*/
+	
 		insert = c;
 		temp[0] = '\0';
 		strncpy(temp,(*node)->data,(*node)->posx);
@@ -1187,8 +1186,7 @@ void getdata(filestruct **node){
 				}
 
 				else{
-					/*insert = c;
-					strcpy(node->data, temp);*/					/* TODO PROBLEM TO FIX: If the nodelinesize exceeds the maxlength of line*/
+									
 					insert = c;
 					temp[0] = '\0';
 					strncpy(temp,(*node)->data,(*node)->posx);
