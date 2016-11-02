@@ -24,6 +24,7 @@
 	14>Paste text
 	15>Window resizing handled
 	16>Can change the view of the text editor
+	17>Cursor traversing handled properly
 	and many more
 
 ->The Structure of the Program:
