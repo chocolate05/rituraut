@@ -22,14 +22,16 @@
 	12>Go to a specified line
 	13>Copy text
 	14>Paste text
+	15>Window resizing handled
+	16>Can change the view of the text editor
 	and many more
 
 ->The Structure of the Program:
-	 A huge buffer is used to read from and store all the text. The buffer is written in a doubly linked- list structure, the text file is break down and represented in list of nodes. Adding, replacing, deleting a line or a block involves simple iteration processes that involve O(n) complexity. Saving, reading, quitting, and undo are also bounded in the same complexity.
+	 A huge buffer is used to read from and store all the text. The buffer is written in a doubly linked- list structure, the text file is break down and represented in list of nodes. Adding, replacing, deleting a line or a block involves simple iteration processes that involve O(1) complexity.Otherwise, rearranging the lines, Saving, reading, involves O(n) complexity.
 
 
 ->Limitations of the program would be: 
-	The text program only reads in ASCII format text files. Any other file would not be able to work properly with the editor.
+	The text program only reads text files. Any other file would not be able to work properly with the editor.
 
 
 ->How to use the program? 
@@ -47,8 +49,5 @@ Example:
 Example:
     ./project 
     >> When no argument given, the editor asks whether to open any file or not.
-
-->Other aspect of the program: 
-	Undo is a complex operation that involves many different programming techniques in this demonstration. The operation would require a history of the command and the information the user had type. Using this information, the software tracks the amount of code that it needs to bring back or erase. One other aspect of the program is to free the allocated memory when it is no longer to be used. In Java, this is automatically done with the Java’s Garbage Collector. However, in C we will need to use Malloc () to reserve a memory space for our linked-list and use Free() when discarding the unused memories.
 
 
