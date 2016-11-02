@@ -25,7 +25,7 @@
 	and many more
 
 ->The Structure of the Program:
-	 A huge buffer is used to read from and store all the text. The buffer is written in a doubly linked- list structure, the text file is break down and represented in list of nodes. A second buffer is also used for tracking purposes for the undo feature in this illustration. Adding, replacing, deleting a line or a block involves simple iteration processes that involve O(n) complexity. Saving, reading, quitting, and undo are also bounded in the same complexity.
+	 A huge buffer is used to read from and store all the text. The buffer is written in a doubly linked- list structure, the text file is break down and represented in list of nodes. Adding, replacing, deleting a line or a block involves simple iteration processes that involve O(n) complexity. Saving, reading, quitting, and undo are also bounded in the same complexity.
 
 
 ->Limitations of the program would be: 
@@ -33,7 +33,7 @@
 
 
 ->How to use the program? 
-	After compilation, an executable would be automatically generated (default executable file name for C Programming Language is a.exe). Run the program with desired text file name in shell command line.
+	After compilation, an executable would be automatically generated. Run the program with desired text file name in shell command line.
 
 Check "./project -h" for more information.
 The program takes a single file for opens it for editing the contents in the file.
